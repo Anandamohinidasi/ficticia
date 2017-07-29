@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Fictícia Videos</title>
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="../../node_modules/angular-material/angular-material.min.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/icons/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css" />
+
+  <script type="text/javascript" src="../../node_modules/angular/angular.min.js"></script>
+  <!--<script type="text/javascript" src="../../node_modules/angular-material/angular-material.min.js"></script>-->
+  <!--<script type="text/javascript" src="../../node_modules/@uirouter/angularjs/release/angular-ui-router.min.js"></script>-->
+
+  <script src="../../node_modules/angular-aria/angular-aria.js"></script>
+  <script src="../../node_modules/angular-animate/angular-animate.js"></script>
+  <script src="../../node_modules/angular-material/angular-material.js"></script>
+
+  <script type="text/javascript" src="./common/common.module.js"></script>
+  <script type="text/javascript" src="./common/common.controller.js"></script>
+  <script type="text/javascript" src="./common/menu-bar/menu-bar.directive.js"></script>
+  <script type="text/javascript" src="./common/video-panel/video-panel.directive.js"></script>
+  <script type="text/javascript" src="./common/video-list/video-list.directive.js"></script>
+  <script type="text/javascript" src="./components/home/home.module.js"></script>
+  <script type="text/javascript" src="./components/home/home.controller.js"></script>
+  <script type="text/javascript" src="./components/home/directives/home.directive.js"></script>
+  <script type="text/javascript" src="./components/search-result/search-result.module.js"></script>
+  <script type="text/javascript" src="./components/videos/videos.module.js"></script>
+  <script type="text/javascript" src="./app.module.js"></script>
+  <script type="text/javascript" src="./app.config.js"></script>
+</head>
+
+<body ng-app="ficticia">
+  <fct-menu-bar></fct-menu-bar>
+  <fct-home></fct-home>
+  <ng-view></ng-view>
+</body>
+
+</html>
